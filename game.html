@@ -1,0 +1,239 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	
+
+	<style>
+	.box{
+		background-color: #a11106;
+		width: 200px;
+		top: 50px;
+		margin-left: auto;
+		border-radius: 10px;
+
+		
+
+	}
+	.text1{
+		font-family: arial;
+		color: #d63402;
+		text-align: center;
+
+
+
+	}
+	.text2{
+		font-family: arial;
+		color: #d63402;
+		text-align: center;
+
+
+
+	}
+	.text3{
+		font-family: arial;
+		color: #d63402;
+		text-align: center;
+
+
+
+	}
+	.text4{
+		font-family: arial;
+		color: #d63402;
+		text-align: center;
+
+
+
+	}
+	.text5{
+		font-family: arial;
+		color: #d63402;
+		text-align: center;
+
+
+
+	}
+	.btext{
+		color:#d63402;
+		margin-left: 20px;
+		font-family: cursive;
+	}
+	.stext{
+		color:#d63402;
+		text-align: center;
+		font-family: cursive;
+	}
+	.img1{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 760px;
+		left: 280px
+	}
+	.img2{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 10px;
+		left: 650px;
+		transform: rotate(-45deg);
+	}
+	.img3{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 220px;
+		left: 395px
+	}
+	.img4{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 180px;
+		left: 1515px;
+		transform: rotate(90deg);
+
+	}
+	.img5{
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: 800px;
+		left: 1700px
+	}
+	.div{
+		width: 200px;
+		margin-top: 10px;
+		margin-left: auto;
+		border-radius: 10px;
+
+	}
+	.btn{
+		background-color:yellow;
+		border-radius: 25px;
+		margin-left: 70px 
+	}
+		
+
+	</style>
+	}
+	}
+		}
+	
+</head>
+<body style="background-image: url(fon.jpg); background-size: 100% ">
+	
+
+	<div class="box pt-3 mt-2">
+		<h3 class="stext">Найдите предметы</h3>
+		<p class="text1 ">паук</p>
+		<p class="text2 ">пистолет</p>
+		<p class="text3 ">бриллиант</p>
+		<p class="text4 ">ключи</p>
+		<p class="text5 ">корабль</p>
+		
+
+		<h3 class="btext ">ОЧКИ: <span class="score"></span></h3>
+		
+	</div>
+	<div class="div">
+		<button class="btn">Restart</button>
+	</div>
+	<img src="image1.png" class="img1">
+	<img src="image2.png" class="img2">
+	<img src="image3.png" class="img3">
+	<img src="image4.png" class="img4">
+	<img src="image5.png" class="img5">
+	<script>
+		let number=0;
+		document.querySelector(".score").innerHTML = number;
+
+		document.querySelector(".img1").onclick = function(){
+			alert("поздравляем, вы нашли предмет");
+			number = number+1;
+			document.querySelector(".score").innerHTML = number;
+			document.querySelector(".img1").style.display = "none";
+			document.querySelector(".text1").style.textDecoration = "line-through";
+		}
+		document.querySelector(".img2").onclick = function(){
+			alert("поздравляем, вы нашли предмет");
+			number = number+1;
+			document.querySelector(".score").innerHTML = number;
+			document.querySelector(".img2").style.display = "none";
+			document.querySelector(".text2").style.textDecoration = "line-through";
+
+		}
+		document.querySelector(".img3").onclick = function(){
+			alert("поздравляем, вы нашли предмет");
+			number = number+1;
+			document.querySelector(".score").innerHTML = number;
+			document.querySelector(".img3").style.display = "none";
+			document.querySelector(".text3").style.textDecoration = "line-through";
+
+		}
+		document.querySelector(".img4").onclick = function(){
+			alert("поздравляем, вы нашли предмет");
+			number = number+1;
+			document.querySelector(".score").innerHTML = number;
+			document.querySelector(".img4").style.display = "none";
+			document.querySelector(".text4").style.textDecoration = "line-through";
+
+		}
+		document.querySelector(".img5").onclick = function(){
+			alert("поздравляем, вы нашли предмет");
+			number = number+1;
+			document.querySelector(".score").innerHTML = number;
+			document.querySelector(".img5").style.display = "none";
+			document.querySelector(".text5").style.textDecoration = "line-through";
+
+		}
+
+
+		document.querySelector(".btn").onclick = function(){
+			number = 0;
+			document.querySelector(".score").innerHTML = number;
+
+			document.querySelector(".img1").style.left = "280px";
+			document.querySelector(".img1").style.top = "760px";
+			document.querySelector(".img1").style.display = "block";
+			document.querySelector(".text1").style.textDecoration = "";
+
+			document.querySelector(".img2").style.left = "650px";
+			document.querySelector(".img2").style.top = "10px";
+			document.querySelector(".img2").style.display = "block";
+			document.querySelector(".text2").style.textDecoration = "";
+
+			document.querySelector(".img3").style.left = "395px";
+			document.querySelector(".img3").style.top = "220px";
+			document.querySelector(".img3").style.display = "block";
+			document.querySelector(".text3").style.textDecoration = "";
+
+			document.querySelector(".img4").style.left = "1515px";
+			document.querySelector(".img4").style.top = "180px";
+			document.querySelector(".img4").style.display = "block";
+			document.querySelector(".text4").style.textDecoration = "";
+
+			document.querySelector(".img5").style.left = "1700px";
+			document.querySelector(".img5").style.top = "800px";
+			document.querySelector(".img5").style.display = "block";
+			document.querySelector(".text5").style.textDecoration = "";
+
+		}
+
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>
